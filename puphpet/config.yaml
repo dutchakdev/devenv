@@ -130,8 +130,8 @@ nginx:
     vhosts:
         rekwkyrzl4xz:
             proxy: ''
-            server_name: sendprod.dev
-            www_root: /var/www/sendprod
+            server_name: localhost.dev
+            www_root: /var/www/localhost.dev
             listen_port: '80'
             location: \.php$
             index_files:
@@ -140,74 +140,6 @@ nginx:
                 - index.php
             envvars:
                 - 'APP_ENV dev'
-            engine: php
-            client_max_body_size: 1m
-            ssl_cert: ''
-            ssl_key: ''
-        5mfaj6qpkvoe:
-            proxy: ''
-            server_name: lun.ua.dev
-            server_aliases:
-                - www.lun.ua.dev
-            www_root: /var/www/lun.ua
-            listen_port: '80'
-            location: \.php$
-            index_files:
-                - index.html
-                - index.htm
-                - index.php
-            envvars:
-                - 'APP_ENV dev'
-            engine: php
-            client_max_body_size: 1m
-            ssl_cert: ''
-            ssl_key: ''
-        zxpat1ypco4z:
-            proxy: ''
-            server_name: nailsmade.ua.dev
-            www_root: /var/www/nailsmade
-            listen_port: '80'
-            location: \.php$
-            index_files:
-                - index.html
-                - index.htm
-                - index.php
-            envvars:
-                - 'APP_ENV dev'
-            engine: php
-            client_max_body_size: 1m
-            ssl_cert: ''
-            ssl_key: ''
-        wtqhfdcoaac4:
-            proxy: ''
-            server_name: news.dev
-            server_aliases:
-                - www.news.dev
-            www_root: /var/www/news/
-            listen_port: '80'
-            location: \.php$
-            index_files:
-                - index.html
-                - index.htm
-                - index.php
-            envvars:
-                - 'APP_ENV dev'
-            engine: php
-            client_max_body_size: 1m
-            ssl_cert: ''
-            ssl_key: ''
-        4ax9sgclzhgr:
-            proxy: ''
-            server_name: bfm.ua.dev
-            server_aliases:
-                - www.bfm.ua.dev
-            www_root: /var/www/bfm/
-            listen_port: '80'
-            location: \.php$
-            index_files:
-                - index.html
-                - index.htm
-                - index.php
             engine: php
             client_max_body_size: 1m
             ssl_cert: ''
@@ -217,7 +149,7 @@ nginx:
             server_name: sandbox.dev
             server_aliases:
                 - www.sandbox.dev
-            www_root: /var/www/sandbox/
+            www_root: /var/www/sandbox.dev/
             listen_port: '80'
             location: \.php$
             index_files:
