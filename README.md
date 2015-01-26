@@ -17,3 +17,17 @@
 2. install vagrant https://www.vagrantup.com/downloads.html
 3. install Parallel Desktop (if not installed)
 4. Run $ vagrant up and go grab a coffee ☕️
+
+
+### Problems? 
+
+if you have:
+```
+The provider 'parallels' could not be found, but was requested to
+back the machine 'default'. Please use a provider that exists.
+```
+
+you want run:
+```
+$  vagrant plugin install vagrant-parallels
+```
